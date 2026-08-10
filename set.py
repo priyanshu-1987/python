@@ -55,3 +55,8 @@ numbers.discard(90) #not generate error
 x=numbers.pop()
 print(x)             #40
 print(numbers)       #{50, 20, 60, 30}
+numbers.clear()      #set still exists, but it is empty
+print(numbers)       #set()
+numbers1={1,2,3,4,5,6}
+del numbers1         #gives a NameError because the variable no longer exists.
+# print(numbers1)  generate NameError 
